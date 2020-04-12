@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/ico">
+  <!-- Vendors -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>DevChat App</title>
+</head>
+<body>
+  <div class="container-fluid h-100 bg-dark text-light p-0">
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand text-info mx-auto" href="#"><i class="far fa-comment-alt fa-2x"></i> DevChat</a>
+        <a href="index.html" class="btn btn-outline-warning">Leave Room <i class="fas fa-sign-out-alt"></i></a>
+    </nav>
+    <div class="container col-xs-10 col-md-8 mt-xs-1 mt-md-5 p-2 rounded bg-info text-light border border-info">
+        <main class="row my-3 px-4">
+            <div class="row col-12 mb-3">
+                <h3 class="mr-3"><i class="fas fa-comments"></i> Room Name:</h3>
+                <h2 id="room-name">JavaScript</h2>
+            </div>
+            <div id="main" class="row w-100 bg-light text-dark rounded">
+                <div class="chat-sidebar col-md-3 py-2 text-dark">    
+                    <h3><i class="fas fa-users"></i> Users</h3>
+                    <ul id="users">
+                        <li>Brad</li>
+                        <li>John</li>
+                        <li>Mary</li>
+                        <li>Paul</li>
+                        <li>Mike</li>
+                    </ul>
+                </div>
+                <div class="chat-messages col-md-9 bg-light border rounded w-100">
+                                <div class="message">
+                                    <p class="meta">Brad <span>9:12pm</span></p>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                        repudiandae.
+                                    </p>
+                                </div>
+                                <div class="message">
+                                    <p class="meta">Mary <span>9:15pm</span></p>
+                                    <p class="text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                        repudiandae.
+                                    </p>
+                                </div>
+                </div>
+            </div>
+        </main>
+        <div class="row col-12">
+            <form id="chat-form" class="form-inline w-100">
+                <div class="form-group col-sm-8 col-md-9 col-lg-10 text-center">
+                    <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" class="form-control w-100 "/>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 text-center">
+                    <button class="btn btn-dark px-4">Send <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

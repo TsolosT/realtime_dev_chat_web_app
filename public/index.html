@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/ico">
+        <!-- Vendors -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <title>DevChat App</title>
+	</head>
+	<body>
+		<div class="container-fluid h-100 bg-dark text-light p-0">
+            <nav class="navbar navbar-light bg-dark">
+                <a class="navbar-brand text-info mx-auto" href="index.html"><i class="far fa-comment-alt fa-2x"></i> DevChat</a>
+            </nav>
+			<main class="container col-xs-10 col-md-6 mt-xs-1 mt-md-5 p-5 rounded bg-light text-dark border border-info">
+				<form action="chat.html" class="text-center">
+                    <h3 class="w-100  mb-3 ">Join Any Chat Room</h3>
+					<div class="form-group text-left">
+						<label for="username"><i class="far fa-user mr-1"></i>Username</label>
+                        <input type="text" name="username" id="username"
+                            class="form-control"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-group text-left">
+						<label for="room"><i class="fas fa-chalkboard mr-1"></i>Room</label>
+						<select class="form-control" name="room" id="room">
+							<option value="JavaScript">JavaScript</option>
+							<option value="Python">Python</option>
+							<option value="PHP">PHP</option>
+							<option value="C#">C#</option>
+							<option value="C/C++">C/C++</option>
+							<option value="Java">Java</option>
+						</select>
+					</div>
+					<button type="submit" class="btn btn-outline-info mx-auto py-2 px-3">Join Chat <i class="fas fa-sign-in-alt"></i></button>
+				</form>
+            </main>
+            <footer class="fixed-bottom w-100 text-center  py-2">
+                <a class="mx-auto text-secondary" href="#"><i class="far fa-comment-alt "></i> DevChat - See Code <i class="fas fa-code"></i></a>
+            </footer>
+		</div>
+	</body>
+</html>
