@@ -28,28 +28,17 @@
                 <div class="chat-sidebar col-md-3 py-2 text-dark">    
                     <h3><i class="fas fa-users"></i> Users</h3>
                     <ul id="users">
-                        <li>Brad</li>
-                        <li>John</li>
-                        <li>Mary</li>
-                        <li>Paul</li>
-                        <li>Mike</li>
+                        <li>Foo-Person</li>
                     </ul>
                 </div>
                 <div class="chat-messages col-md-9 bg-light border rounded w-100">
-                                <div class="message">
-                                    <p class="meta">Brad <span>9:12pm</span></p>
-                                    <p class="text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                                        repudiandae.
-                                    </p>
-                                </div>
-                                <div class="message">
-                                    <p class="meta">Mary <span>9:15pm</span></p>
-                                    <p class="text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                                        repudiandae.
-                                    </p>
-                                </div>
+                    <div class="message">
+                        <p class="meta">Foo-Person <span>9:12pm</span></p>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                            repudiandae.
+                        </p>
+                     </div>
                 </div>
             </div>
         </main>
@@ -65,6 +54,8 @@
         </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.3/qs.min.js" integrity="sha256-lSPkSu/D04IeqWOhTgTf5tLzNFEc37oNE9ysGS9PdK4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

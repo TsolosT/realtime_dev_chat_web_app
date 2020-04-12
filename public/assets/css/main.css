@@ -18,12 +18,11 @@ ul{
     list-style: none;
 }
 #main{
-    overflow-y: scroll;
     margin: 0;
 }
 .chat-messages {
 	padding: 30px;
-	max-height: 500px;
+	max-height: 350px;
 	overflow-y: scroll;
 }
 .chat-sidebar{
