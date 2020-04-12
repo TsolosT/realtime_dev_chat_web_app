@@ -10,9 +10,6 @@ html,body{
     .fixed-bottom{
         position: relative;
     }
-    .h-100{
-        height: auto!important;
-    }
 }
 ul{
     list-style: none;
